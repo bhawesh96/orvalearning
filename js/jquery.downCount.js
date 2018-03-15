@@ -7,7 +7,7 @@
 
     $.fn.downCount = function (options, callback) {
         var settings = $.extend({
-                date: '03/15/2018 12:00:00',
+                date: '03/30/2018 12:00:00',
                 offset: null
             }, options);
 
