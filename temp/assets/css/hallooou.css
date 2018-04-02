@@ -596,6 +596,10 @@ blockquote span{
              animation: rotateplane 1.2s infinite ease-in-out;
 }
 
+.header-logo {
+    width: 60%;
+}
+
 
 /* Full Slider HTML Template via www.startbootstrap.com
 /* ---------------------------------------------- */
@@ -1903,6 +1907,12 @@ footer .social a{
 
 }
 
+@media(max-width: 480px) {
+    .header-logo {
+        width: 100%;
+    }
+}
+
 
 
 
@@ -1942,4 +1952,3 @@ body {
 .debug{
     border:1px solid #f00;
 }
-
