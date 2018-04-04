@@ -94,8 +94,8 @@ body {
 
 body {
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 300;
-    color: #999; /* Can be changed via colors.css */
+    font-weight: 700;
+    color: #7E7D7D; /* Can be changed via colors.css */
     background-color: #fff;
 }
 
@@ -109,7 +109,7 @@ h6 {
     margin: 0 0 20px 0;
     text-transform: none;
     color: rgba(254,82,76, 1); /* Primary color, can be changed via colors.css */
-    font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 600;
     letter-spacing: 1px;
     line-height: 1.5;
@@ -144,11 +144,12 @@ a:focus {
 }
 
 .gray{
-    color: #a5a5a5;
+    /*color: #a5a5a5;*/
+    color: #7E7D7D
 }
 
 .darkgray {
-    color: #000;
+    color: #7E7D7D;
 }
 
 .buffer-twenty{
@@ -271,7 +272,7 @@ blockquote span{
 .navbar-custom {
     margin-bottom: 0;
     text-transform: none;
-    font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 600;
     -webkit-transition: background .5s ease-in-out;
    -moz-transition: background .5s ease-in-out;
@@ -447,7 +448,7 @@ blockquote span{
     height: 50%;
     top: 50%;
     font-size: 30px;
-    font-family: "Raleway", "Helvetica Neue", Arial, sans-serif;
+    font-family: "Helvetica Neue", Arial, sans-serif;
     text-transform: none;
     font-weight: 600;
     text-align: center;
@@ -1648,7 +1649,7 @@ footer .social a{
     border: 0;
     padding: 10px 30px;
     text-transform: none;
-    font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 16px;
     font-weight: 100;
     -webkit-transition: all .3s ease-in-out;
