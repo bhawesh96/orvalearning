@@ -147,6 +147,10 @@ a:focus {
     color: #a5a5a5;
 }
 
+.darkgray {
+    color: #000;
+}
+
 .buffer-twenty{
     margin:20px 0;
 }
