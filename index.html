@@ -561,15 +561,6 @@ s0.parentNode.insertBefore(s1,s0);
                                         </div><!-- /.item -->
 
                                         <div class="item">
-                                            <p class="speech">You made us proud .. God bless you dear. Keep up this good work.. Your zeal and will power will take  you to paramount heights.. All the very best for every upcoming ventures. I just pray you never have to look back</p>
-                                            <div class="client-info">
-                                                <img src="assets/images/testimonials/shweta.jpeg" />
-                                                <h4>Shweta Nahar</h4>
-                                                <span>Founder, Explore (Personality Development School)</span>
-                                            </div>
-                                        </div><!-- /.item -->
-
-                                        <div class="item">
                                             <p class="speech">It's been very exciting to have trained srishti as she is a person who is highly energetic and keeps herself updated . From casual instructions to highly professional training standards you have come a very long way. I take pride in celebrating the fact that your first ever venture orva has  turned one year nurtured by your dedication passion and efficiency as a communication skills trainer.  Wishing you many more successful times.</p>
                                             <div class="client-info">
                                                 <img src="assets/images/testimonials/kaushik.jpeg" />
@@ -679,7 +670,7 @@ s0.parentNode.insertBefore(s1,s0);
 
                         <div class="col-md-8 contact-form">
                             <h3>Drop us a line</h3>
-                            <form class="ajax-form" id="contactForm" method="get" action="http://mightycabs.com/orva.php">
+                            <form class="ajax-form" id="contact-form">
                                 <div class="form-group">
                                     <input type="text" class="form-control" id="name" name="name" placeholder="Your Name..." value="" required>
                                 </div>
@@ -818,6 +809,31 @@ s0.parentNode.insertBefore(s1,s0);
 
     <!-- jQuery -->
     <script src="assets/js/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $('#contact-form').submit(function(event) {
+                event.preventDefault();
+                $.post("http://new.satyaaircon.com/send-email.php", {
+                    name: $('#name').val(),
+                    email: $('#email').val(),
+                    phone: $('#phone').val(),
+                    message: $('#message').val(),
+                    to_email: 'srishti@orva.in'
+                },
+                function(data, status) {
+                    console.log(data + status);
+                    if (status == "success") {
+                        $('#contact-form').trigger("reset");
+                        alert("Thank you for contacting us. We'll reach out to your shortly!");
+                    }
+                    else {
+                        alert("Sorry, couldn't send your message. Please try again later.");
+                    }
+                });
+            });
+        });
+    </script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="assets/js/bootstrap.min.js"></script>
