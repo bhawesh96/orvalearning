@@ -703,7 +703,7 @@ s0.parentNode.insertBefore(s1,s0);
                                     <input type="phone" class="form-control" id="phone" name="phone" placeholder="Your phone..." value="" required>
                                 </div>
                                 <div class="form-group">
-                                    <textarea class="form-control" rows="4" name="message" placeholder="Your message..." required></textarea>
+                                    <textarea class="form-control" rows="4" id="message" name="message" placeholder="Your message..." required></textarea>
                                 </div>
                                 <div class="form-group">
                                     <button type="submit" name="submit" class="btn btn-default"><i class="fa fa-paper-plane fa-fw"></i> Send</button>
@@ -873,7 +873,7 @@ s0.parentNode.insertBefore(s1,s0);
                     email: $('#email').val(),
                     phone: $('#phone').val(),
                     message: $('#message').val(),
-                    to_email: 'bhansalibhawesh85@gmail.com'
+                    to_email: 'cribblservices@gmail.com'
                 },
                 function(data, status) {
                     console.log(data + status);
