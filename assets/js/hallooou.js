@@ -180,60 +180,6 @@ $(function() {
 });
 
 
-// YouTube Player
-$(function() {
-    $(".player").mb_YTPlayer();
-
-    $('#video-play').click(function(event) {
-        event.preventDefault();
-        if ($(this).hasClass('fa-play')) {
-            $('.player').playYTP();
-        } else {
-            $('.player').pauseYTP();
-        }
-        $(this).toggleClass('fa-play fa-pause');
-        return false;
-    });
-
-    $('#video-volume').click(function(event) {
-        event.preventDefault();
-        $('.player').toggleVolume();
-        $(this).toggleClass('fa-volume-off fa-volume-up');
-        return false;
-    });
-});
-
-
-// HTML5 Player
-$(function() {
-
-    var vid = $("#html5-video").get(0);
-
-    $('#html5-video-play').click(function(event) {
-        event.preventDefault();
-        if (vid.paused) {
-            vid.play();
-        } else {
-            vid.pause();
-        }
-        $(this).toggleClass('fa-play fa-pause');
-        return false;
-    });
-
-    $('#html5-video-volume').click(function(event) {
-        event.preventDefault();
-        if (vid.muted) {
-            vid.muted = false;
-        } else {
-            vid.muted = true;
-        }
-        $(this).toggleClass('fa-volume-off fa-volume-up');
-        return false;
-    });
-});
-
-
-
 // Google map API
 $(function() {
 
